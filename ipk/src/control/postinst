@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "start doing firmware upgrade..."
+
+dd if=/tmp/firmware.bin of=/dev/mmcblk0
+
+echo "upgrade finish...rebooting..."
+
+reboot
